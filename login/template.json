@@ -1,0 +1,14 @@
+{
+	"widgets": {
+		"hide": {
+			"SPONSOR": true,
+			"MANAGER": true
+		},
+		"enabledWidgets": "*"
+	},
+	"blocks": {
+		"preventAdd": false,
+		"enabledBlocks": "*",
+		"predefinedBlocks": {}
+	}
+} 

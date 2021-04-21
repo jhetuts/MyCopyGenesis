@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>{{livepage.title}} | Extravaganza Asia Pacific 2021</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link type="text/css" rel="stylesheet" href="{{project.baseUrl}}/styles/reset.css">
+  <link type="text/css" rel="stylesheet" href="{{global.baseUrl}}/styles/theme.css">
+  <link type="text/css" rel="stylesheet" href="{{project.baseUrl}}/styles/style.css">
+  <script type="text/javascript" src="{{project.baseUrl}}/scripts/auth-sdk.js"></script>
+</head>
+
+<body>
+  <main id="xtraLogin" data-gevme-main="gevme-main"> {{#if livepage.logo}}
+    <div data-gevme-wrap="gevme-wrap"> <img data-gevme-logo="gevme-logo" class="logo" src="{{livepage.logo.url}}"
+        alt="Logo" /> </div>{{else if setting.logo}}
+    <div data-gevme-wrap="gevme-wrap"> <img data-gevme-logo="gevme-logo" class="logo" src="{{setting.logo}}"
+        alt="Logo" /> </div>{{/if}}
+    <div data-gevme-heading="data-gevme-heading-h1" data-gevme-wrap="gevme-wrap-heading">
+      <h1 data-gevme-h1="gevme-h1"><img src="{{project.baseUrl}}/assets/extravaganza_logo.png" alt="Extravaganza Logo">
+      </h1>
+    </div>
+    <div class="login-container">
+      <div data-gevme-login="gevme-login">
+        <div data-gevme-heading="data-gevme-heading-h2" data-gevme-wrap="gevme-wrap-heading">
+          <h2 data-gevme-h2="gevme-h2"><span id="loginTxt01">Check in to access this event</span></h2>
+        </div>
+        <div data-gevme-wrap="gevme-wrap-form" data-gevme-form="gevme-login">
+          <p data-gevme-p="gevme-p"><span id="loginTxt02">Check-in with: </span><span id="loginTxt03">Email</span></p>
+          <form data-gevme-form="gevme-form" data-gevme-login-type="login-with-email">
+            <label data-gevme-label="gevme-email" for="email">
+              <input id="gevmeEmail" data-gevme-input="gevme-email" type="email" name="email" placeholder="Email"
+                autocapitalize="none" autocomplete="off" />
+              <p id="errTxtEmail" data-gevme-error="gevme-error" data-error="email"></p>
+            </label>
+            <input id="gevmeCheckinBtn" data-gevme-input="gevme-submit" type="submit" value="Check In" />
+          </form>
+          <p id="errTxtGeneral" data-gevme-error="gevme-error" data-error="general"></p>
+        </div>
+        <div data-gevme-wrap="gevme-wrap-form" data-gevme-form="gevme-otp">
+          <div data-gevme-wrap="gevme-wrap" class="otpCon"> <img
+              src="https://files-myxp.gevme.com/templates/assets/icon_email_otp.svg" alt="OTP Sent" /> </div>
+          <h3 data-gevme-h3="gevme-h3"><span id="otpText01">Check your email for your OTP</span></h3>
+          <p id="otpText02" data-gevme-p="gevme-p"></p>
+          <form data-gevme-form="gevme-form" data-gevme-login-type="login-with-email">
+            <label data-gevme-label="gevme-otp" for="otp-wrap">
+              <div id="otp-wrap" class="otp-inputs" data-otp-length="4"> </div>
+            </label>
+            <p id="errTxtOtp" data-gevme-error="gevme-error" data-error="otp"></p>
+          </form> <a href="#" data-gevme-anchor="gevme-back"><span id="txtBack01">Back</span></a>
+        </div>
+        <div data-gevme-wrap="gevme-wrap-form" data-gevme-form="gevme-membership">
+          <p data-gevme-p="gevme-p"><span id="txtMemID">Enter your Member ID:</span></p>
+          <form data-gevme-form="gevme-form" data-gevme-login-type="login-with-email-otp2">
+            <label data-gevme-label="gevme-memberid" for="memberid">
+              <div class="membership-input" id="membership-input"> </div>
+              <p id="errTxtMemID" data-gevme-error="gevme-error" data-error="memberid"></p>
+            </label>
+            <input id="member-submit" data-gevme-input="gevme-submit" type="submit" value="Submit" />
+          </form> <a href="#" data-gevme-anchor="gevme-back-otp"><span id="txtBack02">Back</span></a>
+        </div>
+        <div data-gevme-wrap="gevme-wrap-footer">
+          <a target="_blank" href="https://www.gevme.com/en/" data-gevme-p="gevme-p"> <img class="login-footer-logo"
+              src="https://files-myxp.gevme.com/templates/assets/GEVME_logo.svg" alt="GEVME" /> </a>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>

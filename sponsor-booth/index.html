@@ -1,0 +1,32 @@
+{{{global.partials.head-section}}}
+<main class="gevme-template-main {{#if setting.livebar.positionLeft}}livebar-left{{else}}livebar-right{{/if}}">
+    {{#if setting.livebar.enabled}}
+        {{#if setting.livebar.positionLeft}}
+            <div class="gevme-template-chat" {{#if setting.livebar.closable}}style="flex: 0 0 60px;"{{else}}style="flex: 0 0 360px;"{{/if}}>
+                <gevme-live-bar />
+            </div>
+        {{/if}}
+    {{/if}}
+    <div class="gevme-template-content" style="background-image: url('{{setting.backgroundImage}}')">
+        <div class="gevme-content-blocks-container with-cover-image">
+            <div class="cover-image-container">
+                <img class="cover-image" src="{{livepage.showcaseblocks.sponsor-cover-image.imageBlock.images.0.url}}" alt="cover" loading="lazy">
+                <div class="logo-image-group-container">
+                    <div class="logo-image-group">
+                        <img class="logo-image" src="{{livepage.showcaseblocks.sponsor-logo-image.imageBlock.images.0.url}}" alt="logo" loading="lazy">
+                        <div class="sponsor-name">{{#if sponsor.name}}<span>{{sponsor.name}}</span>{{else}}<span>{{project.name}}</span>{{/if}}</div>
+                    </div>
+                </div>
+            </div>
+            <gevme-content-block exclude="sponsor-logo-image,sponsor-cover-image" />
+        </div>
+    </div>
+    {{#if setting.livebar.enabled}}
+        {{#if setting.livebar.positionRight}}
+            <div class="gevme-template-chat" {{#if setting.livebar.closable}}style="flex: 0 0 60px;"{{else}}style="flex: 0 0 360px;"{{/if}}>
+                <gevme-live-bar />
+            </div>
+        {{/if}}
+    {{/if}}
+</main>
+{{{global.partials.tail-section}}}

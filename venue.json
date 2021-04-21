@@ -1,0 +1,218 @@
+{
+    "name": "Genesis",
+    "description": "A very simple, efficient and minimalist style of venue, Genesis is ideal for 1-day multi-track conferences, seminars or meetings, with breakouts as options.",
+    "version": "1.0.0",
+    "author": "GSI",
+    "keyword": "1-Day, Multi-Track, Conference, Seminar, Meeting, Breakout",
+    "features": "7 templates: Lobby Main stage Breakout Speakers About Login 404, Sticky menu, Live stream, Chat, Direct message, Participants list, Speakers and agenda, Content blocks, Notifications, Responsive template, Light and dark mode",
+    "defaultMenus": [
+        {
+            "name": "Header Menu",
+            "items": [
+                {
+                    "name": "Lobby",
+                    "link": "{{project.name}}-lobby",
+                    "openInNewWindow": true
+                },
+                {
+                    "name": "Main Stage",
+                    "link": "{{project.name}}-main-stage",
+                    "openInNewWindow": true
+                },
+                {
+                    "name": "Breakout Session",
+                    "link": "{{project.name}}-breakout",
+                    "openInNewWindow": true
+                },
+                {
+                    "name": "Agenda",
+                    "link": "{{project.name}}-agenda",
+                    "openInNewWindow": true
+                },
+                {
+                    "name": "Speakers",
+                    "link": "{{project.name}}-speakers",
+                    "openInNewWindow": true
+                },
+                {
+                    "name": "About",
+                    "link": "{{project.name}}-about",
+                    "openInNewWindow": true
+                }
+            ]
+        }
+    ],
+    "defaultLivepages": [
+        {
+            "slug": "{{project.name}}-lobby",
+            "title": "Lobby - {{project.name}}",
+            "isPublic": false,
+            "template": "lobby"
+        },
+        {
+            "slug": "{{project.name}}-main-stage",
+            "title": "Main Stage - {{project.name}}",
+            "isPublic": false,
+            "template": "main-stage"
+        }, {
+            "slug": "{{project.name}}-breakout",
+            "title": "Breakout - {{project.name}}",
+            "isPublic": false,
+            "template": "breakout"
+        },
+        {
+            "slug": "{{project.name}}-agenda",
+            "title": "Agenda - {{project.name}}",
+            "isPublic": false,
+            "template": "blank",
+            "predefinedBlocks": {
+                "page-title-block": {
+                    "type": "RichText",
+                    "title": "Page Title",
+                    "data": {
+                        "heading": "Page Title",
+                        "headingVisibility": false,
+                        "headingAlignment": "center",
+                        "textContent": "<p style=\"text-align: center;\"><span style=\"white-space:pre-wrap;\"><strong><span style=\"font-size: 32px; font-family: var(--themeSecondaryFontFamily);\">Agenda</span></strong></span></p>",
+                        "order": 1,
+                        "alignment": "left",
+                        "blockWidth": "100%",
+                        "blockHeight": "fit-content",
+                        "fitHeightToContent": true,
+                        "boundingBox": false,
+                        "contentPadding": "0px"
+                    }
+                },
+                "agenda-block": {
+                    "type": "Agenda",
+                    "title": "Agenda",
+                    "data": {
+                        "heading": "Agenda",
+                        "headingVisibility": false,
+                        "headingAlignment": "center",
+                        "blockLayout": "single",
+                        "agendaFromLivePage": "all",
+                        "enableBookmark": true,
+                        "layout": null,
+                        "mode": "light",
+                        "moderatorsVisibility": true,
+                        "panelistsVisibility": true,
+                        "sessionDescription": null,
+                        "sessionDescriptionVisibility": true,
+                        "sessionTitle": "Agenda",
+                        "sessionTitleVisibility": true,
+                        "speakersVisibility": true,
+                        "order": 2,
+                        "alignment": "center",
+                        "blockWidth": "100%",
+                        "blockHeight": "340px",
+                        "fitHeightToContent": false,
+                        "boundingBox": true,
+                        "contentPadding": "16px"
+                    }
+                }
+            }
+        },
+        {
+            "slug": "{{project.name}}-speakers",
+            "title": "Speakers - {{project.name}}",
+            "isPublic": false,
+            "template": "blank",
+            "predefinedBlocks": {
+                "page-title-block": {
+                    "type": "RichText",
+                    "title": "Page Title",
+                    "data": {
+                        "heading": "Page Title",
+                        "headingVisibility": false,
+                        "headingAlignment": "center",
+                        "textContent": "<p style=\"text-align: center;\"><span style=\"white-space:pre-wrap;\"><strong><span style=\"font-size: 32px; font-family: var(--themeSecondaryFontFamily);\">Speakers</span></strong></span></p>",
+                        "order": 1,
+                        "alignment": "left",
+                        "blockWidth": "100%",
+                        "blockHeight": "fit-content",
+                        "fitHeightToContent": true,
+                        "boundingBox": false,
+                        "contentPadding": "0px"
+                    }
+                },
+                "speakers-block": {
+                    "type": "Speakers",
+                    "title": "Speakers",
+                    "data": {
+                        "heading": "Speakers",
+                        "headingVisibility": false,
+                        "headingAlignment": "center",
+                        "cardBoundingBox": false,
+                        "cardHeight": "401px",
+                        "cardPadding": "16px",
+                        "cardWidth": "220px",
+                        "fitCardHeightToContent": true,
+                        "speakers": [],
+                        "layout": "inline",
+                        "showSpeakersType": "all",
+                        "sortBy": "firstname",
+                        "sortOrder": "ASC",
+                        "speakerBioVisibility": true,
+                        "speakerCompanyVisibility": true,
+                        "speakerJobTitleVisibility": true,
+                        "order": 2,
+                        "alignment": "left",
+                        "blockWidth": "100%",
+                        "blockHeight": "fit-content",
+                        "fitHeightToContent": true,
+                        "boundingBox": false,
+                        "contentPadding": "0px"
+                    }
+                }
+            }
+        },
+        {
+            "slug": "{{project.name}}-about",
+            "title": "About - {{project.name}}",
+            "isPublic": false,
+            "template": "blank",
+            "predefinedBlocks": {
+                "page-title-block": {
+                    "type": "RichText",
+                    "title": "Page Title",
+                    "data": {
+                        "heading": "Page Title",
+                        "headingVisibility": false,
+                        "headingAlignment": "center",
+                        "textContent": "<p style=\"text-align: center;\"><span style=\"white-space:pre-wrap;\"><strong><span style=\"font-size: 32px; font-family: var(--themeSecondaryFontFamily);\">About</span></strong></span></p>",
+                        "order": 1,
+                        "alignment": "left",
+                        "blockWidth": "100%",
+                        "blockHeight": "fit-content",
+                        "fitHeightToContent": true,
+                        "boundingBox": false,
+                        "contentPadding": "0px"
+                    }
+                },
+                "about-text-block": {
+                    "type": "RichText",
+                    "title": "About",
+                    "data": {
+                        "heading": "About",
+                        "headingVisibility": false,
+                        "headingAlignment": "center",
+                        "textContent": "<p><strong><span style=\"white-space: pre-wrap; font-size: 24px; font-family: var(--themeSecondaryFontFamily);\">About</span></strong></p><p><br></p><p><span style=\"white-space: pre-wrap; font-size: 14px; font-family: var(--themePrimaryFontFamily);\"><span style=\"white-space:pre-wrap;\">Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</span></span></p><p><br></p><p><span style=\"white-space:pre-wrap;\"><span style=\"white-space: pre-wrap; font-size: 24px; font-family: var(--themeSecondaryFontFamily);\"><strong>Organising Team</strong></span></span></p><p><br></p><p><span style=\"white-space:pre-wrap;\"><span style=\"white-space: pre-wrap; font-size: 14px; font-family: var(--themePrimaryFontFamily);\"><span style=\"white-space: pre-wrap;\"><span style=\"white-space:pre-wrap;\">Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.<br><br>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</span></span></span></span></p>",
+                        "order": 2,
+                        "alignment": "left",
+                        "blockWidth": "100%",
+                        "blockHeight": "fit-content",
+                        "fitHeightToContent": true,
+                        "boundingBox": true,
+                        "contentPadding": "32px"
+                    }
+                }
+            }
+        }, {
+            "slug": "{{project.name}}-sponsor-booth",
+            "title": "Sponsor Booth - {{project.name}}",
+            "isPublic": false,
+            "template": "sponsor-booth"
+        }
+    ]
+}

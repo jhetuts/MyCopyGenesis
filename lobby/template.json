@@ -1,0 +1,220 @@
+{
+    "widgets": {
+        "enabledWidgets": "*"
+    },
+    "blocks": {
+        "enabledBlocks": "*",
+        "predefinedBlocks": {
+            "logo-image-block": {
+                "type": "Image",
+                "title": "Logo Image",
+                "data": {
+                    "heading": "Logo Image",
+                    "headingVisibility": false,
+                    "headingAlignment": "center",
+                    "autoScrollEnabled": false,
+                    "autoScrollTimeInterval": null,
+                    "images": [
+                        {
+                            "url": "{{setting.logo}}"
+                        }
+                    ],
+                    "isSlideshow": false,
+                    "spaceBetweenImages": "0px",
+                    "order": 1,
+                    "alignment": "left",
+                    "blockWidth": "100%",
+                    "blockHeight": "76px",
+                    "fitHeightToContent": false,
+                    "boundingBox": false,
+                    "contentPadding": "0px"
+                }
+            },
+            "page-title-block": {
+                "type": "RichText",
+                "title": "Page Title",
+                "data": {
+                    "heading": "Page Title",
+                    "headingVisibility": false,
+                    "headingAlignment": "center",
+                    "textContent": "<p style=\"text-align: center;\"><strong><span style=\"font-size: 20px; font-family: var(--themeSecondaryFontFamily);\">{{project.name}}</span></strong></p>",
+                    "order": 2,
+                    "alignment": "left",
+                    "blockWidth": "100%",
+                    "blockHeight": "fit-content",
+                    "fitHeightToContent": true,
+                    "boundingBox": false,
+                    "contentPadding": "0px"
+                }
+            },
+            "page-description-block": {
+                "type": "RichText",
+                "title": "Page Description",
+                "data": {
+                    "heading": "Page Description",
+                    "headingVisibility": false,
+                    "headingAlignment": "center",
+                    "textContent": "<p style=\"text-align: center;\"><span style=\"white-space:pre-wrap;\"><strong><span style=\"font-size: 36px; font-family: var(--themeSecondaryFontFamily);\">Your Event Tagline Here</span></strong></span></p>",
+                    "order": 3,
+                    "alignment": "left",
+                    "blockWidth": "100%",
+                    "blockHeight": "fit-content",
+                    "fitHeightToContent": true,
+                    "boundingBox": false,
+                    "contentPadding": "0px"
+                }
+            },
+            "hero-block": {
+                "type": "HeroContent",
+                "title": "Hero Content",
+                "data": {
+                    "heading": "Hero Content",
+                    "headingVisibility": false,
+                    "headingAlignment": "center",
+                    "Description": "Use the hero content block to show some key content prominently. This could be a banner leading to your main session for example.",
+                    "DescriptionVisibility": true,
+                    "title": "Hero content title",
+                    "titleVisibility": true,
+                    "coverDisplayType": "video",
+                    "coverImage": "",
+                    "coverLivestreamOrVideo": null,
+                    "link": null,
+                    "order": 4,
+                    "alignment": "left",
+                    "blockWidth": "100%",
+                    "blockHeight": "fit-content",
+                    "fitHeightToContent": true,
+                    "boundingBox": true,
+                    "contentPadding": "16px"
+                }
+            },
+            "featured-block": {
+                "type": "FeaturedContent",
+                "title": "Featured Content",
+                "data": {
+                    "heading": "Featured Content",
+                    "headingVisibility": true,
+                    "headingAlignment": "center",
+                    "cardBoundingBox": false,
+                    "cardHeight": "340px",
+                    "cardPadding": "16px",
+                    "cardWidth": "260px",
+                    "fitCardHeightToContent": true,
+                    "cardDescriptionVisibility": true,
+                    "cardTitleVisibility": true,
+                    "featuredcontent": [
+                        {
+                            "coverDisplayImage": null,
+                            "coverDisplayType": null,
+                            "coverDisplayVideo": null,
+                            "description": "<p>Add some description about your featured content here.</p>",
+                            "link": null,
+                            "order": 1,
+                            "title": "Featured content 1",
+                            "visibility": true
+                        },
+                        {
+                            "coverDisplayImage": null,
+                            "coverDisplayType": "image",
+                            "coverDisplayVideo": null,
+                            "description": "<p>Add some description about your featured content here.</p>",
+                            "link": null,
+                            "order": 2,
+                            "title": "Featured content 2",
+                            "visibility": true
+                        },
+                        {
+                            "coverDisplayImage": null,
+                            "coverDisplayType": "image",
+                            "coverDisplayVideo": null,
+                            "description": "<p>Add some description about your featured content here.</p>",
+                            "link": null,
+                            "order": 3,
+                            "title": "Featured content 3",
+                            "visibility": true
+                        }
+                    ],
+                    "order": 5,
+                    "alignment": "left",
+                    "blockWidth": "100%",
+                    "blockHeight": "fit-content",
+                    "fitHeightToContent": true,
+                    "boundingBox": false,
+                    "contentPadding": "0px"
+                }
+            },
+            "speakers-block": {
+                "type": "Speakers",
+                "title": "Keynote Speakers",
+                "data": {
+                    "heading": "Keynote Speakers",
+                    "headingVisibility": true,
+                    "headingAlignment": "center",
+                    "cardBoundingBox": false,
+                    "cardHeight": "401px",
+                    "cardPadding": "16px",
+                    "cardWidth": "220px",
+                    "fitCardHeightToContent": true,
+                    "speakers": [],
+                    "layout": "inline",
+                    "showSpeakersType": "all",
+                    "sortBy": "firstname",
+                    "sortOrder": "ASC",
+                    "speakerBioVisibility": true,
+                    "speakerCompanyVisibility": true,
+                    "speakerJobTitleVisibility": true,
+                    "order": 6,
+                    "alignment": "left",
+                    "blockWidth": "100%",
+                    "blockHeight": "fit-content",
+                    "fitHeightToContent": true,
+                    "boundingBox": false,
+                    "contentPadding": "0px"
+                }
+            },
+            "sponsors-block": {
+                "type": "ImageList",
+                "title": "Sponsors",
+                "data": {
+                    "heading": "Sponsors",
+                    "headingVisibility": true,
+                    "headingAlignment": "center",
+                    "autoScrollEnabled": false,
+                    "autoScrollTimeInterval": null,
+                    "isSlideshow": false,
+                    "spaceBetweenImages": "24px",
+                    "images": [
+                        {
+                            "url": "https://venues-sdk.gevme.com/assets/sponsors/sample1.png"
+                        },
+                        {
+                            "url": "https://venues-sdk.gevme.com/assets/sponsors/sample2.png"
+                        },
+                        {
+                            "url": "https://venues-sdk.gevme.com/assets/sponsors/sample3.png"
+                        },
+                        {
+                            "url": "https://venues-sdk.gevme.com/assets/sponsors/sample4.png"
+                        },
+                        {
+                            "url": "https://venues-sdk.gevme.com/assets/sponsors/sample5.png"
+                        },
+                        {
+                            "url": "https://venues-sdk.gevme.com/assets/sponsors/sample6.png"
+                        },
+                        {
+                            "url": "https://venues-sdk.gevme.com/assets/sponsors/sample7.png"
+                        }
+                    ],
+                    "order": 7,
+                    "alignment": "left",
+                    "blockWidth": "100%",
+                    "blockHeight": "178px",
+                    "fitHeightToContent": true,
+                    "boundingBox": true,
+                    "contentPadding": "24px"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,210 @@
+{
+    "widgets": {
+        "enabledWidgets": "*"
+    },
+    "blocks": {
+        "enabledBlocks": "*",
+        "predefinedBlocks": {
+            "sponsor-logo-image": {
+                "type": "Image",
+                "title": "Sponsor Logo",
+                "data": {
+                    "heading": "Sponsor Logo",
+                    "headingVisibility": false,
+                    "headingAlignment": "left",
+                    "autoScrollEnabled": false,
+                    "autoScrollTimeInterval": null,
+                    "images": [
+                        {
+                            "url": "https://venues-sdk.gevme.com/assets/sponsor-booth-logo.png"
+                        }
+                    ],
+                    "isSlideshow": false,
+                    "spaceBetweenImages": "0px",
+                    "order": 1,
+                    "alignment": "left",
+                    "blockWidth": "178px",
+                    "blockHeight": "128px",
+                    "fitHeightToContent": false,
+                    "boundingBox": false,
+                    "contentPadding": "0px"
+                }
+            },
+            "sponsor-cover-image": {
+                "type": "Image",
+                "title": "Sponsor Cover",
+                "data": {
+                    "heading": "Sponsor Cover",
+                    "headingVisibility": false,
+                    "headingAlignment": "left",
+                    "autoScrollEnabled": false,
+                    "autoScrollTimeInterval": null,
+                    "images": [
+                        {
+                            "url": "https://venues-sdk.gevme.com/assets/sponsor-booth-cover.png"
+                        }
+                    ],
+                    "isSlideshow": false,
+                    "spaceBetweenImages": "0px",
+                    "order": 2,
+                    "alignment": "left",
+                    "blockWidth": "100%",
+                    "blockHeight": "216px",
+                    "fitHeightToContent": false,
+                    "boundingBox": false,
+                    "contentPadding": "0px"
+                }
+            },
+            "livestream-block": {
+                "type": "LiveStream",
+                "title": "Livestream",
+                "data": {
+                    "heading": "Livestream",
+                    "headingVisibility": false,
+                    "headingAlignment": "left",
+                    "livestreamTitle": "Livestream",
+                    "livestreamTitleVisibility": true,
+                    "streamingService": "youtube",
+                    "livestreamUrl": null,
+                    "displaySomethingWhenNotLive": "video",
+                    "displayImageWhenNotLive": null,
+                    "displayVideoWhenNotLive": null,
+                    "disableVideoQualityOptions": false,
+                    "disableAutoplay": true,
+                    "order": 3,
+                    "alignment": "left",
+                    "blockWidth": "100%",
+                    "blockHeight": "524px",
+                    "fitHeightToContent": false,
+                    "boundingBox": true,
+                    "contentPadding": "0px"
+                }
+            },
+            "about-sponsor-block": {
+                "type": "RichText",
+                "title": "About {{sponsor.name}}",
+                "data": {
+                    "heading": "About {{sponsor.name}}",
+                    "headingVisibility": true,
+                    "headingAlignment": "left",
+                    "textContent": "<p><span style=\"white-space: pre-wrap; font-size: 14px; font-family: var(--themePrimaryFontFamily);\"><span style=\"white-space:pre-wrap;\">Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</span></span></p><p><br></p>",
+                    "order": 4,
+                    "alignment": "left",
+                    "blockWidth": "100%",
+                    "blockHeight": "fit-content",
+                    "fitHeightToContent": true,
+                    "boundingBox": true,
+                    "contentPadding": "24px"
+                }
+            },
+            "meeting-block": {
+                "type": "Meeting",
+                "title": "Meet Us",
+                "data": {
+                    "heading": "Want to learn more? Talk to us by joining the meeting below",
+                    "title": "Meet Us",
+                    "headingVisibility": true,
+                    "headingAlignment": "center",
+                    "settings": {
+                        "background": "https://venues-sdk.gevme.com/assets/meeting-blue-background.png",
+                        "disableBackground": false,
+                        "disableCamera": false,
+                        "disableChat": false,
+                        "disableFrontDoor": false,
+                        "disableParticipantList": false,
+                        "disableShareScreen": false,
+                        "disableVideo": false
+                    },
+                    "meetingId": null,
+                    "meetingType": "meet",
+                    "order": 5,
+                    "alignment": "left",
+                    "blockWidth": "50%",
+                    "blockHeight": "506px",
+                    "fitHeightToContent": false,
+                    "boundingBox": true,
+                    "contentPadding": "24px"
+                }
+            },
+            "brochures-block": {
+                "type": "Resources",
+                "title": "Brochures",
+                "data": {
+                    "heading": "Brochures",
+                    "headingVisibility": true,
+                    "headingAlignment": "left",
+                    "ctaColor": "#e50072",
+                    "enableItemCTA": true,
+                    "enableItemIcon": true,
+                    "resources": [
+                        {
+                            "link": "https://venues-sdk.gevme.com/assets/sample.pdf",
+                            "type": "pdf",
+                            "label": "Resource file name 1",
+                            "labelVisibility": true,
+                            "ctaIcon": "https://venues-sdk.gevme.com/assets/resources-pdf-icon.svg",
+                            "ctaText": "Download"
+                        },
+                        {
+                            "link": "https://venues-sdk.gevme.com/assets/sample.pdf",
+                            "type": "pdf",
+                            "label": "Resource file name 2",
+                            "labelVisibility": true,
+                            "ctaIcon": "https://venues-sdk.gevme.com/assets/resources-pdf-icon.svg",
+                            "ctaText": "Download"
+                        },
+                        {
+                            "link": "https://venues-sdk.gevme.com/assets/sample.pdf",
+                            "type": "pdf",
+                            "label": "Resource file name 3",
+                            "labelVisibility": true,
+                            "ctaIcon": "https://venues-sdk.gevme.com/assets/resources-pdf-icon.svg",
+                            "ctaText": "Download"
+                        }
+                    ],
+                    "order": 6,
+                    "alignment": "left",
+                    "blockWidth": "50%",
+                    "blockHeight": "506px",
+                    "fitHeightToContent": false,
+                    "boundingBox": true,
+                    "contentPadding": "24px"
+                }
+            },
+            "our-products-block": {
+                "type": "ImageSlideshow",
+                "title": "Our Products",
+                "data": {
+                    "heading": "Our Products",
+                    "headingVisibility": true,
+                    "headingAlignment": "center",
+                    "autoScrollEnabled": true,
+                    "autoScrollTimeInterval": "30",
+                    "isSlideshow": true,
+                    "spaceBetweenImages": "0px",
+                    "images": [
+                        {
+                            "url": "https://venues-sdk.gevme.com/assets/slideshow-default.png"
+                        },
+                        {
+                            "url": "https://venues-sdk.gevme.com/assets/slideshow-default.png"
+                        },
+                        {
+                            "url": "https://venues-sdk.gevme.com/assets/slideshow-default.png"
+                        },
+                        {
+                            "url": "https://venues-sdk.gevme.com/assets/slideshow-default.png"
+                        }
+                    ],
+                    "order": 7,
+                    "alignment": "left",
+                    "blockWidth": "100%",
+                    "blockHeight": "420px",
+                    "fitHeightToContent": true,
+                    "boundingBox": false,
+                    "contentPadding": "16px"
+                }
+            }
+        }
+    }
+}

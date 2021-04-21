@@ -1,0 +1,197 @@
+{
+    "widgets": {
+        "enabledWidgets": "*"
+    },
+    "blocks": {
+        "enabledBlocks": "*",
+        "predefinedBlocks": {
+            "page-title-block": {
+                "type": "RichText",
+                "title": "Page Title",
+                "data": {
+                    "heading": "Page Title",
+                    "headingVisibility": false,
+                    "headingAlignment": "center",
+                    "textContent": "<p style=\"text-align: center;\"><span style=\"white-space:pre-wrap;\"><strong><span style=\"font-size: 32px; font-family: var(--themeSecondaryFontFamily);\">Main Stage</span></strong></span></p>",
+                    "order": 1,
+                    "alignment": "left",
+                    "blockWidth": "100%",
+                    "blockHeight": "fit-content",
+                    "fitHeightToContent": true,
+                    "boundingBox": false,
+                    "contentPadding": "0px"
+                }
+            },
+            "livestream-block": {
+                "type": "LiveStream",
+                "title": "Livestream",
+                "data": {
+                    "heading": "Livestream",
+                    "headingVisibility": false,
+                    "headingAlignment": "left",
+                    "livestreamTitle": "Livestream",
+                    "livestreamTitleVisibility": true,
+                    "streamingService": "youtube",
+                    "livestreamUrl": null,
+                    "displaySomethingWhenNotLive": "video",
+                    "displayImageWhenNotLive": null,
+                    "displayVideoWhenNotLive": null,
+                    "disableVideoQualityOptions": false,
+                    "disableAutoplay": true,
+                    "order": 2,
+                    "alignment": "left",
+                    "blockWidth": "100%",
+                    "blockHeight": "524px",
+                    "fitHeightToContent": false,
+                    "boundingBox": true,
+                    "contentPadding": "0px"
+                }
+            },
+            "agenda-block": {
+                "type": "Agenda",
+                "title": "Agenda",
+                "data": {
+                    "heading": "Agenda",
+                    "headingVisibility": false,
+                    "headingAlignment": "left",
+                    "blockLayout": "single",
+                    "agendaFromLivePage": "all",
+                    "enableBookmark": true,
+                    "layout": null,
+                    "mode": "light",
+                    "moderatorsVisibility": true,
+                    "panelistsVisibility": true,
+                    "sessionDescription": null,
+                    "sessionDescriptionVisibility": true,
+                    "sessionTitle": "Agenda",
+                    "sessionTitleVisibility": true,
+                    "speakersVisibility": true,
+                    "order": 3,
+                    "alignment": "left",
+                    "blockWidth": "50%",
+                    "blockHeight": "340px",
+                    "fitHeightToContent": false,
+                    "boundingBox": true,
+                    "contentPadding": "16px"
+                }
+            },
+            "resources-block": {
+                "type": "Resources",
+                "title": "Resources",
+                "data": {
+                    "heading": "Resources",
+                    "headingVisibility": true,
+                    "headingAlignment": "left",
+                    "ctaColor": "#e50072",
+                    "enableItemCTA": true,
+                    "enableItemIcon": true,
+                    "resources": [
+                        {
+                            "link": "https://venues-sdk.gevme.com/assets/sample.pdf",
+                            "type": "pdf",
+                            "label": "Resource file name 1",
+                            "labelVisibility": true,
+                            "ctaIcon": "https://venues-sdk.gevme.com/assets/resources-pdf-icon.svg",
+                            "ctaText": "Download"
+                        },
+                        {
+                            "link": "https://venues-sdk.gevme.com/assets/sample.pdf",
+                            "type": "pdf",
+                            "label": "Resource file name 2",
+                            "labelVisibility": true,
+                            "ctaIcon": "https://venues-sdk.gevme.com/assets/resources-pdf-icon.svg",
+                            "ctaText": "Download"
+                        },
+                        {
+                            "link": "https://venues-sdk.gevme.com/assets/sample.pdf",
+                            "type": "pdf",
+                            "label": "Resource file name 3",
+                            "labelVisibility": true,
+                            "ctaIcon": "https://venues-sdk.gevme.com/assets/resources-pdf-icon.svg",
+                            "ctaText": "Download"
+                        }
+                    ],
+                    "order": 4,
+                    "alignment": "left",
+                    "blockWidth": "50%",
+                    "blockHeight": "340px",
+                    "fitHeightToContent": false,
+                    "boundingBox": true,
+                    "contentPadding": "24px"
+                }
+            },
+            "speakers-block": {
+                "type": "Speakers",
+                "title": "Speakers",
+                "data": {
+                    "heading": "Speakers",
+                    "headingVisibility": true,
+                    "headingAlignment": "center",
+                    "cardBoundingBox": false,
+                    "cardHeight": "401px",
+                    "cardPadding": "16px",
+                    "cardWidth": "220px",
+                    "fitCardHeightToContent": true,
+                    "speakers": [],
+                    "layout": "inline",
+                    "showSpeakersType": "all",
+                    "sortBy": "firstname",
+                    "sortOrder": "ASC",
+                    "speakerBioVisibility": true,
+                    "speakerCompanyVisibility": true,
+                    "speakerJobTitleVisibility": true,
+                    "order": 5,
+                    "alignment": "left",
+                    "blockWidth": "100%",
+                    "blockHeight": "fit-content",
+                    "fitHeightToContent": true,
+                    "boundingBox": false,
+                    "contentPadding": "0px"
+                }
+            },
+            "sponsors-block": {
+                "type": "ImageList",
+                "title": "Sponsors",
+                "data": {
+                    "heading": "Sponsors",
+                    "headingVisibility": true,
+                    "headingAlignment": "center",
+                    "autoScrollEnabled": false,
+                    "autoScrollTimeInterval": null,
+                    "isSlideshow": false,
+                    "spaceBetweenImages": "24px",
+                    "images": [
+                        {
+                            "url": "https://venues-sdk.gevme.com/assets/sponsors/sample1.png"
+                        },
+                        {
+                            "url": "https://venues-sdk.gevme.com/assets/sponsors/sample2.png"
+                        },
+                        {
+                            "url": "https://venues-sdk.gevme.com/assets/sponsors/sample3.png"
+                        },
+                        {
+                            "url": "https://venues-sdk.gevme.com/assets/sponsors/sample4.png"
+                        },
+                        {
+                            "url": "https://venues-sdk.gevme.com/assets/sponsors/sample5.png"
+                        },
+                        {
+                            "url": "https://venues-sdk.gevme.com/assets/sponsors/sample6.png"
+                        },
+                        {
+                            "url": "https://venues-sdk.gevme.com/assets/sponsors/sample7.png"
+                        }
+                    ],
+                    "order": 6,
+                    "alignment": "left",
+                    "blockWidth": "100%",
+                    "blockHeight": "178px",
+                    "fitHeightToContent": true,
+                    "boundingBox": true,
+                    "contentPadding": "24px"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "widgets": {
+        "enabledWidgets": "*"
+    },
+    "blocks": {
+        "enabledBlocks": "*",
+        "predefinedBlocks": {}
+    }
+}

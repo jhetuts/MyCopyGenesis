@@ -1,0 +1,85 @@
+{
+    "widgets": {
+        "enabledWidgets": "*"
+    },
+    "blocks": {
+        "enabledBlocks": "*",
+        "predefinedBlocks": {
+            "page-title-block": {
+                "type": "RichText",
+                "title": "Page Title",
+                "data": {
+                    "heading": "Page Title",
+                    "headingVisibility": false,
+                    "headingAlignment": "center",
+                    "textContent": "<p style=\"text-align: center;\"><span style=\"white-space:pre-wrap;\"><strong><span style=\"font-size: 32px; font-family: var(--themeSecondaryFontFamily);\">Breakout Session</span></strong></span></p>",
+                    "order": 1,
+                    "alignment": "left",
+                    "blockWidth": "100%",
+                    "blockHeight": "fit-content",
+                    "fitHeightToContent": true,
+                    "boundingBox": false,
+                    "contentPadding": "0px"
+                }
+            },
+            "meeting-block": {
+                "type": "Meeting",
+                "title": "Fireside Chat",
+                "data": {
+                    "heading": "Fireside Chat",
+                    "title": "Fireside Chat",
+                    "headingVisibility": false,
+                    "headingAlignment": "left",
+                    "settings": {
+                        "background": "https://venues-sdk.gevme.com/assets/meeting-white-background.jpg",
+                        "disableBackground": true,
+                        "disableCamera": false,
+                        "disableChat": false,
+                        "disableFrontDoor": false,
+                        "disableParticipantList": false,
+                        "disableShareScreen": false,
+                        "disableVideo": false
+                    },
+                    "meetingId": null,
+                    "meetingType": "meet",
+                    "order": 2,
+                    "alignment": "left",
+                    "blockWidth": "100%",
+                    "blockHeight": "600px",
+                    "fitHeightToContent": false,
+                    "boundingBox": false,
+                    "contentPadding": "0px"
+                }
+            },
+            "speakers-block": {
+                "type": "Speakers",
+                "title": "Join these speakers in the chat:",
+                "data": {
+                    "heading": "Join these speakers in the chat:",
+                    "headingVisibility": true,
+                    "headingAlignment": "center",
+                    "cardBoundingBox": false,
+                    "cardHeight": "320px",
+                    "cardPadding": "16px",
+                    "cardWidth": "260px",
+                    "fitCardHeightToContent": true,
+                    "speakers": [],
+                    "layout": "grid",
+                    "showSpeakersType": "all",
+                    "sortBy": "firstname",
+                    "sortOrder": "ASC",
+                    "speakerBioVisibility": true,
+                    "speakerCompanyVisibility": true,
+                    "speakerJobTitleVisibility": true,
+                    "order": 3,
+                    "alignment": "left",
+                    "blockWidth": "100%",
+                    "blockHeight": "fit-content",
+                    "fitHeightToContent": true,
+                    "boundingBox": false,
+                    "contentPadding": "0px"
+                }
+            }
+        }
+    }
+}

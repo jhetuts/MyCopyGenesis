@@ -238,6 +238,7 @@ try {
         try {
           const payload =
             typeof e.data === "string" ? JSON.parse(e.data) : e.data;
+          console.log("handleResponseFromPlatform: ", payload);
           form.classList.remove("form-submitted", "form-loading");
 
           if (payload) {

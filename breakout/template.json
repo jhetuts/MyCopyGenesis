@@ -77,7 +77,8 @@
                     "blockHeight": "fit-content",
                     "fitHeightToContent": true,
                     "boundingBox": false,
-                    "contentPadding": "0px"
+                    "contentPadding": "0px",
+                    "backgroundCoverImageDimension": { "width": 800, "height": 463 },
                 }
             }
         }

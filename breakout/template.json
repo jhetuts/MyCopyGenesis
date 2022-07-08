@@ -78,7 +78,7 @@
                     "fitHeightToContent": true,
                     "boundingBox": false,
                     "contentPadding": "0px",
-                    "backgroundCoverImageDimension": { "width": 800, "height": 463 },
+                    "backgroundCoverImageDimension": { "width": 800, "height": 463 }
                 }
             }
         }
